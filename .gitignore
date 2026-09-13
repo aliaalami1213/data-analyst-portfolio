@@ -8,8 +8,3 @@ __pycache__/
 .venv/
 venv/
 
-### Data (raw Kaggle downloads - don't commit, see each project's data/README.md) ###
-*/data/*.csv
-*/data/*.xlsx
-*/data/*.zip
-!*/data/README.md
