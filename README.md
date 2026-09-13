@@ -2,7 +2,7 @@
 
 Hi, I'm Alia 👋 This repo is a collection of end-to-end data analysis projects I built using public Kaggle datasets — from raw data to cleaned data, exploratory analysis, and business recommendations.
 
-📫 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/alia-alami) &nbsp;|&nbsp; alia.alami1213@gmail.com
+📫 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/alia-alami)
 
 ---
 
