@@ -2,9 +2,7 @@
 
 Hi, I'm Alia 👋 This repo is a collection of end-to-end data analysis projects I built using public Kaggle datasets — from raw data to cleaned data, exploratory analysis, and business recommendations.
 
-📫 **Connect with me:** [LinkedIn](#) &nbsp;|&nbsp; alia.alami1213@gmail.com
-
-> Replace the `#` above with your actual LinkedIn profile URL, then link back to this repo from your LinkedIn "Featured" section or About summary.
+📫 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/alia-alami) &nbsp;|&nbsp; alia.alami1213@gmail.com
 
 ---
 
@@ -37,4 +35,4 @@ Both projects' data is already included in `data/`, so you can open a project's 
 
 ## 📌 About me
 
-_A couple sentences here: your background, what kind of Data Analyst role you're targeting, and what you're currently learning. This is the first thing recruiters read — keep it short and specific._
+I'm finishing my M.S. in Business Analytics at UMass Amherst (Aug 2026), on top of a B.S. in Mathematics with a concentration in Statistics and Data Science. I've worked as a data/analytics intern across nonprofit consulting, education-finance policy, legal research, and banking — turning large transactional and program datasets into dashboards, models, and recommendations that stakeholders acted on (including a $285M+ capital-formation impact dashboard and a $5.38M funding-disparity finding that shaped district budget decisions). I'm targeting Data Analyst / Business Analyst roles where I can pair Python/R/SQL analysis with clear storytelling in Tableau and Power BI.
