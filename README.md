@@ -12,16 +12,19 @@ Hi, I'm Alia 👋 This repo is a collection of end-to-end data analysis projects
 |---|---------|---------|----------------------|---------------|
 | 1 | [HR Employee Attrition Analysis](./01-hr-employee-attrition) | [IBM HR Analytics (Kaggle)](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) | Data cleaning, segmentation, hypothesis-driven EDA, visualization | Who is leaving the company, and why? |
 | 2 | [Netflix Content Trends](./02-netflix-content-trends) | [Netflix Movies and TV Shows (Kaggle)](https://www.kaggle.com/datasets/shivamb/netflix-shows) | Text/categorical data wrangling, trend analysis, storytelling with charts | How has Netflix's content strategy shifted over time? |
+| 3 | [California Home Price Prediction](./03-california-home-price-prediction) | [California Housing Prices (1990 Census)](https://www.kaggle.com/datasets/camnugent/california-housing-prices) | Regression modeling (OLS + neural network), VIF/multicollinearity, statistical diagnostics, model comparison | Can neighborhood demographics and geography predict home value, and what drives price? |
 
 Each project folder contains:
 - `README.md` — business question, approach, and key findings (written for a recruiter skimming in 60 seconds)
 - `analysis.ipynb` — the full, executed notebook (data cleaning → EDA → insights, with charts and outputs saved)
 - `images/` — exported charts referenced in the README
-- `data/README.md` — dataset source link (the raw CSV is included directly in `data/` for these two projects so the notebook runs out of the box)
+- `data/README.md` — dataset source link (the raw CSV is included directly in `data/` for projects 1-2 so the notebook runs out of the box; project 3 fetches its data at runtime — see its `data/README.md`)
+
+Project 3 also includes `657_Final_Presentation.pptx`, the slide deck summarizing that project's methodology and results.
 
 ## 🛠 Tools
 
-Python (pandas, numpy, matplotlib, seaborn), Jupyter, and standard data-analyst workflow: define question → clean data → explore → visualize → recommend.
+Python (pandas, numpy, matplotlib, seaborn, scikit-learn, statsmodels, TensorFlow/Keras), Jupyter, and standard data-analyst workflow: define question → clean data → explore → visualize → (model) → recommend.
 
 ## 🚀 Getting a project running locally
 
@@ -31,7 +34,7 @@ cd data-analyst-portfolio
 pip install -r requirements.txt
 ```
 
-Both projects' data is already included in `data/`, so you can open a project's `analysis.ipynb` and run it directly — no download needed. `data/README.md` in each project links back to the original Kaggle source.
+Projects 1-2's data is already included in `data/`, so you can open `analysis.ipynb` and run it directly — no download needed. Project 3 pulls its data from a hosted link at runtime; see its `data/README.md` for a fallback source. Each project's `data/README.md` links back to the original dataset.
 
 ## 📌 About me
 
