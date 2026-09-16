@@ -15,12 +15,13 @@ Hi, I'm Alia 👋 This repo is a collection of end-to-end data analysis projects
 | 3 | [California Home Price Prediction](./03-california-home-price-prediction) | [California Housing Prices (1990 Census)](https://www.kaggle.com/datasets/camnugent/california-housing-prices) | Regression modeling (OLS + neural network), VIF/multicollinearity, statistical diagnostics, model comparison | Can neighborhood demographics and geography predict home value, and what drives price? |
 | 4 | [E-Commerce Customer Segmentation, Churn & CLV Prediction](./04-ecommerce-customer-segmentation) | [E-Commerce Customer Segmentation 2026 (Kaggle)](https://www.kaggle.com/datasets/datascikhan/e-commerce-customer-segmentation-2026) | K-Means clustering, classification & regression (scikit-learn), feature-leakage-aware model design, marketing targeting frameworks | Which customers are most valuable, which are at risk of churning, and how should marketing prioritize retention spend? |
 | 5 | [Online Food Delivery — Customer Ordering Behavior](./05-online-food-delivery-analysis) | [Online Food Ordering Dataset (Kaggle)](https://www.kaggle.com/datasets/srisyra02/online-food-ordering-dataset) | Data cleaning (duplicate columns/rows), segmentation, crosstab analysis, classification modeling (scikit-learn), visualization | Which demographic, income, and household factors are associated with placing an online food order, and can they predict it? |
+| 6 | [Sony (SONY) Stock — Technical Analysis, Volatility & Backtesting](./06-sony-stock-technical-analysis) | [Sony Stock Data (Kaggle)](https://www.kaggle.com/datasets/nilesh2042/sony-stock-data) | Technical indicators (SMA/EMA, RSI, MACD, Bollinger Bands), volatility analysis, ARIMA time-series forecasting (statsmodels), strategy backtesting | Do technical-indicator strategies or time-series forecasts actually beat buying and holding? |
 
 Each project folder contains:
 - `README.md` — business question, approach, and key findings (written for a recruiter skimming in 60 seconds)
 - `analysis.ipynb` — the full, executed notebook (data cleaning → EDA → insights, with charts and outputs saved)
 - `images/` — exported charts referenced in the README
-- `data/README.md` — dataset source link (the raw CSV is included directly in `data/` for projects 1, 2, 4, and 5 so the notebook runs out of the box; project 3 fetches its data at runtime — see its `data/README.md`)
+- `data/README.md` — dataset source link (the raw CSV is included directly in `data/` for projects 1, 2, 4, 5, and 6 so the notebook runs out of the box; project 3 fetches its data at runtime — see its `data/README.md`)
 
 Project 3 also includes `657_Final_Presentation.pptx`, the slide deck summarizing that project's methodology and results.
 
@@ -36,7 +37,7 @@ cd data-analyst-portfolio
 pip install -r requirements.txt
 ```
 
-Projects 1, 2, and 4's data is already included in `data/`, so you can open `analysis.ipynb` and run it directly — no download needed. Project 3 pulls its data from a hosted link at runtime; see its `data/README.md` for a fallback source. Each project's `data/README.md` links back to the original dataset.
+Projects 1, 2, 4, 5, and 6's data is already included in `data/`, so you can open `analysis.ipynb` and run it directly — no download needed. Project 3 pulls its data from a hosted link at runtime; see its `data/README.md` for a fallback source. Each project's `data/README.md` links back to the original dataset.
 
 ## 📌 About me
 
