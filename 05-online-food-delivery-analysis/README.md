@@ -11,7 +11,8 @@ Which demographic, income, and household factors are associated with whether a c
 3. **Segment by occupation & income** — order rate broken out by occupation and monthly income bracket.
 4. **Segment by marital status & customer type** — order rate for single/married respondents and for New/Regular/Frequent customers.
 5. **Segment by age & family size** — compare these between customers who did and didn't order.
-6. **Recommend** — translate the patterns into acquisition/retention priorities.
+6. **Classification model** — de-duplicate to unique respondents (285), then compare Logistic Regression and Random Forest against an "always predict Yes" baseline (5-fold CV) to see whether demographics can actually predict order likelihood, plus feature importances.
+7. **Recommend** — translate the patterns into acquisition/retention priorities.
 
 ## Key Findings
 - **77.6%** of respondents placed an order; **81.7%** gave positive feedback — the service converts and satisfies most people it reaches.
@@ -21,6 +22,7 @@ Which demographic, income, and household factors are associated with whether a c
 - **Customer type tracks order rate as expected**: Frequent (76.7%) and Regular (78.9%) customers order at similar, higher rates than New customers (70.8%), consistent with New customers still being early in the relationship.
 - Customers who did **not** order skew slightly older (mean age 26.0 vs. 24.2) and report a slightly larger family size (3.39 vs. 3.25) — real but modest gaps.
 - **Data quality note:** 103 of 388 rows (26.5%) are exact duplicates. Plausible for a short categorical survey, but worth flagging before this data is used to train a predictive model, since duplicates can inflate confidence in patterns really driven by a handful of unique respondents.
+- **Classification model:** on the 285 unique respondents, a Random Forest predicting `Output` from demographics ties the "always predict Yes" baseline on accuracy (77.2% vs. 76.1%) but reaches **ROC AUC 0.735** — it can rank customers by order likelihood better than chance, but demographics alone aren't a strong enough signal to reliably flip individual predictions at this sample size. **Age and family size are by far the top two predictors**, well ahead of any single occupation, income, or education category.
 
 ## Recommendations
 1. Prioritize acquisition and retention on **students and single, no/low-income young adults** — the segment already converting and responding most positively — rather than assuming higher income brackets are the best-fit customer.
@@ -31,6 +33,6 @@ Which demographic, income, and household factors are associated with whether a c
 Full code and outputs are in [`analysis.ipynb`](./analysis.ipynb).
 
 ## Files
-- `analysis.ipynb` — full notebook: cleaning → EDA → segment analysis → findings & recommendations
+- `analysis.ipynb` — full notebook: cleaning → EDA → segment analysis → classification model (scikit-learn) → findings & recommendations
 - `data/` — the dataset CSV (included directly, no download needed) + `data/README.md` with the source link
 - `images/` — exported charts referenced above and in the notebook
