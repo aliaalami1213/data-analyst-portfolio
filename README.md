@@ -17,12 +17,13 @@ Hi, I'm Alia 👋 This repo is a collection of end-to-end data analysis projects
 | 5 | [Online Food Delivery — Customer Ordering Behavior](./05-online-food-delivery-analysis) | [Online Food Ordering Dataset (Kaggle)](https://www.kaggle.com/datasets/srisyra02/online-food-ordering-dataset) | Data cleaning (duplicate columns/rows), segmentation, crosstab analysis, classification modeling (scikit-learn), visualization | Which demographic, income, and household factors are associated with placing an online food order, and can they predict it? |
 | 6 | [Sony (SONY) Stock — Technical Analysis, Volatility & Backtesting](./06-sony-stock-technical-analysis) | [Sony Stock Data (Kaggle)](https://www.kaggle.com/datasets/nilesh2042/sony-stock-data) | Technical indicators (SMA/EMA, RSI, MACD, Bollinger Bands), volatility analysis, ARIMA time-series forecasting (statsmodels), strategy backtesting | Do technical-indicator strategies or time-series forecasts actually beat buying and holding? |
 | 7 | [Red Wine Quality — What Makes a Wine "Good"?](./07-red-wine-quality) | [Red Wine Quality, Cortez et al. 2009 (Kaggle/UCI)](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009) | Classification (Logistic Regression, Decision Tree, Random Forest), hyperparameter tuning (`GridSearchCV`), ROC/AUC evaluation on imbalanced classes, feature-leakage-aware modeling | Which physicochemical properties distinguish a "good" wine, and how accurately can it be predicted? |
+| 8 | [Luxury Fashion Market & Trend Analysis](./08-luxury-fashion-trends) | [Net-a-Porter/Mr Porter Fashion Dataset (Kaggle)](https://www.kaggle.com/datasets/justinpakzad/net-a-portermr-porter-fashion-dataset) | NLP/text feature engineering (TF-IDF), classification (scikit-learn), brand/price segmentation, trend mining, market-intelligence storytelling | How is the luxury market structured by category, brand, and gender, and what does product-description language reveal about pricing? |
 
 Each project folder contains:
 - `README.md` — business question, approach, and key findings (written for a recruiter skimming in 60 seconds)
 - `analysis.ipynb` — the full, executed notebook (data cleaning → EDA → insights, with charts and outputs saved)
 - `images/` — exported charts referenced in the README
-- `data/README.md` — dataset source link (the raw CSV is included directly in `data/` for projects 1, 2, 4, 5, 6, and 7 so the notebook runs out of the box; project 3 fetches its data at runtime — see its `data/README.md`)
+- `data/README.md` — dataset source link (the raw CSV is included directly in `data/` for projects 1, 2, 4, 5, 6, 7, and 8 so the notebook runs out of the box; project 3 fetches its data at runtime — see its `data/README.md`)
 
 Project 3 also includes `657_Final_Presentation.pptx`, the slide deck summarizing that project's methodology and results.
 
@@ -38,7 +39,7 @@ cd data-analyst-portfolio
 pip install -r requirements.txt
 ```
 
-Projects 1, 2, 4, 5, 6, and 7's data is already included in `data/`, so you can open `analysis.ipynb` and run it directly — no download needed. Project 3 pulls its data from a hosted link at runtime; see its `data/README.md` for a fallback source. Each project's `data/README.md` links back to the original dataset.
+Projects 1, 2, 4, 5, 6, 7, and 8's data is already included in `data/`, so you can open `analysis.ipynb` and run it directly — no download needed. Project 3 pulls its data from a hosted link at runtime; see its `data/README.md` for a fallback source. Each project's `data/README.md` links back to the original dataset.
 
 ## 📌 About me
 
