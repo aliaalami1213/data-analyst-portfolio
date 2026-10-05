@@ -1,0 +1,16 @@
+country,category_rank,category,customers,revenue_usd,pct_of_country_revenue
+Germany,1,Electronics,260,13349161.0,8.9
+Germany,2,Pet Supplies,246,13188375.0,8.8
+Germany,3,Toys,255,13127436.0,8.8
+Mexico,1,Home & Kitchen,259,14493938.0,9.5
+Mexico,2,Electronics,238,14475401.0,9.5
+Mexico,3,Sports & Fitness,270,13772452.0,9.1
+Singapore,1,Home & Kitchen,269,14795469.0,9.5
+Singapore,2,Electronics,253,14752592.0,9.4
+Singapore,3,Pet Supplies,271,14512308.0,9.3
+United Arab Emirates,1,Grocery,295,13665331.0,9.1
+United Arab Emirates,2,Home & Kitchen,241,13031654.0,8.7
+United Arab Emirates,3,Beauty,238,12996990.0,8.7
+United States,1,Automotive,269,14721941.0,9.8
+United States,2,Grocery,270,13429698.0,8.9
+United States,3,Health & Personal Care,270,13264812.0,8.8

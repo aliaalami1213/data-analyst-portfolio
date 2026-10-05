@@ -1,0 +1,4 @@
+inactivity_bucket,customers,countries,lifetime_revenue_usd,avg_lifetime_spend_usd,pct_of_revenue_at_risk,cumulative_pct
+1: 61-90 days,534,17,77168586.0,144510.0,34.8,34.8
+2: 91-180 days,366,17,52468959.0,143358.0,23.7,58.5
+3: 181-365 days,641,17,92126677.0,143723.0,41.5,100.0

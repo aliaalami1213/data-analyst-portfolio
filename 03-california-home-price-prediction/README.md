@@ -21,10 +21,9 @@ Can neighborhood-level demographics and geography accurately forecast California
 - **Model diagnostics flagged heteroscedasticity** (Breusch-Pagan test): prediction errors are not evenly spread across price ranges — the model is less reliable at the high and low ends, partly because the target is capped at $500,001 in the source data, which suppresses signal for luxury homes.
 
 ## Limitations
-1990 Census data with no temporal component (can't capture market cycles), a $500K price cap that hurts luxury-home accuracy, and ~30% of price variance still unexplained by the current feature set. See the [presentation](./657_Final_Presentation.pptx) for the full discussion of next steps (gradient boosting, segmented models by region/price tier, cross-validation, SHAP explainability).
+1990 Census data with no temporal component (can't capture market cycles), a $500K price cap that hurts luxury-home accuracy, and ~30% of price variance still unexplained by the current feature set. Next steps: gradient boosting, segmented models by region/price tier, cross-validation, and SHAP explainability.
 
 ## Files
 - `analysis.ipynb` — full notebook: cleaning → EDA → feature engineering → OLS + neural network models → diagnostics
-- `657_Final_Presentation.pptx` — final presentation summarizing the business framing, methodology, and results
 - `images/` — key charts (correlation heatmap, ocean-proximity price differences, training curves, residual diagnostics)
 - `data/README.md` — dataset source and how the notebook loads it

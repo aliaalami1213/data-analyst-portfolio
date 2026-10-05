@@ -1,0 +1,5 @@
+shopping_channel,customers,avg_revenue_usd,avg_cac_usd,ltv_to_cac,ltv_to_cac_rank,revenue_vs_avg_pct,churn_rate_pct,return_rate_pct
+Mobile App,12542,50486.0,102.04,495.0,1,0.4,29.7,9.5
+Marketplace,12336,50136.0,101.98,492.0,2,-0.3,30.7,9.5
+Online,12587,50295.0,102.67,490.0,3,0.1,30.6,9.5
+In-Store,12535,50147.0,103.12,486.0,4,-0.2,30.4,9.7

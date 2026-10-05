@@ -1,0 +1,8 @@
+check_name,value
+rows in customers,50000
+distinct customer_id,50000
+null country,0
+negative or zero spend,262
+spend <> purchases x AOV (>1% off),0
+customers with no category,0
+rows in customer_categories,100000

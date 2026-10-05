@@ -1,0 +1,6 @@
+tenure_cohort,customers,active_rate_pct,pp_change_vs_prev_cohort,avg_spend_usd,spend_per_tenure_month_usd
+0: under 1 yr,4632,70.6,,50132.0,8356.0
+1: 1-2 yrs,5077,69.7,-0.9,50327.0,2877.0
+2: 2-3 yrs,5231,69.7,-0.1,50505.0,1713.0
+3: 3-5 yrs,9973,69.8,0.2,50338.0,1059.0
+4: 5+ yrs,25087,69.4,-0.4,50201.0,562.0
