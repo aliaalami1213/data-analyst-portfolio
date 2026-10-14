@@ -1,0 +1,17 @@
+metric,Base,Upside,Downside
+Growth adjustment (points per year),0.0000,0.0200,-0.0200
+Cost of sales (% of sales),0.6920,0.6820,0.7070
+Terminal growth rate,0.0200,0.0250,0.0150
+FY2030 sales,14298832.7233,15742948.0132,12962781.1668
+"Sales CAGR, FY2025–FY2030",0.0276,0.0476,0.0076
+FY2030 operating income,1773055.2577,2109555.0338,1412943.1472
+FY2030 operating margin,0.1240,0.1340,0.1090
+"Free cash flow, FY2026–FY2030 total",6191553.3338,7188987.8032,5047899.2895
+Enterprise value,19474179.7832,24945767.3835,14464645.4574
+Equity value,21139489.7832,26611077.3835,16129955.4574
+Value per share (¥),3578.3142,4504.4983,2730.3426
+Value per ADR (US$),22.4881,28.3088,17.1590
+Market price per share (¥),3842.7479,3842.7479,3842.7479
+Value versus market price,-0.0688,0.1722,-0.2895
+Terminal value as share of enterprise value,0.7479,0.7722,0.7222
+"Balance check, all forecast years (must be zero)",0.0000,0.0000,0.0000

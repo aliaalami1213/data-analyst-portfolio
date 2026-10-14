@@ -1,0 +1,7 @@
+input,value,as_of,source
+share_price_usd,24.149999618530273,2026-08-24,Last close in ../06-sony-stock-technical-analysis/data/sony_stock_data.csv (1 ADR = 1 common share)
+usd_jpy,159.12,2026-08-24,ECB reference rate via api.frankfurter.app
+jgb_10y_yield_pct,3.027,2026-10-09,Japan Ministry of Finance JGB interest rate table (jgbcme.csv)
+shares_outstanding,5907667254,2026-03-31,"Sony Form 20-F FY2025 cover page, common stock outstanding"
+statutory_tax_rate_pct,31.5,2026-03-31,"Sony Form 20-F FY2025, income taxes note"
+effective_tax_rate_pct,25.8,2026-03-31,"Sony Form 20-F FY2025, income taxes note"

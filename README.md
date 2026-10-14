@@ -6,7 +6,7 @@ I've worked as a data/analytics intern across nonprofit consulting, education-fi
 
 📫 [LinkedIn](https://www.linkedin.com/in/alia-alami) · alia.alami1213@gmail.com
 
-**Tools:** Python (pandas, scikit-learn, statsmodels, TensorFlow/Keras) · SQL · R · Tableau · Power BI · Jupyter
+**Tools:** Python (pandas, scikit-learn, statsmodels, TensorFlow/Keras) · SQL · Excel (financial modelling) · R · Tableau · Power BI · Jupyter
 
 ---
 
@@ -32,14 +32,16 @@ I've worked as a data/analytics intern across nonprofit consulting, education-fi
 
 <img src="./08-luxury-fashion-trends/images/02_brand_positioning_map.png" width="620" alt="Brand positioning map: assortment depth by median price">
 
-### [Sony Stock — Technical Analysis, Volatility & Backtesting](./06-sony-stock-technical-analysis) — Python · time series
+### [Sony — Financial Forecast, Three-Statement Model & DCF Valuation](./10-sony-financial-model-dcf-valuation) — Excel · Python · [stock analysis companion](./06-sony-stock-technical-analysis)
 
-> **Do technical-indicator strategies or forecasts actually beat buying and holding?**
+> **What is Sony worth on its own cash flows, and how does that compare with the market price?**
 
-- **ARIMA adds no edge over a naive forecast** — one-step RMSE ties "tomorrow = today" (0.443 vs. 0.443).
-- An SMA(20/50) crossover strategy gives up 4.6 points of CAGR (12.8% vs. 17.4%) for ~17 points shallower drawdowns, landing at the **same Sharpe ratio (0.67 vs. 0.68)** — a risk-management tool, not a return enhancer.
+- A linked Excel model (1,840 live formulas) built from Sony's SEC filing: segment revenue forecast → income statement, balance sheet and cash flow → DCF, in three scenarios.
+- Base-case value is **¥3,578 per share, 7% below the ¥3,843 market price**; scenarios span ¥2,730 to ¥4,504.
+- The discount rate matters more than the forecast: one point of WACC moves the value by 13–18%, and 75% of enterprise value is terminal value.
+- Companion stock analysis: an SMA crossover strategy matches buy & hold on **Sharpe ratio (0.67 vs. 0.68)** and ARIMA adds no edge over a naive forecast.
 
-<img src="./06-sony-stock-technical-analysis/images/07_backtest_equity_curve.png" width="620" alt="Backtest equity curve: SMA crossover strategy vs. buy and hold">
+<img src="./10-sony-financial-model-dcf-valuation/images/02_valuation_by_scenario.png" width="620" alt="Sony DCF value per share by scenario against the market price">
 
 ---
 
@@ -56,8 +58,9 @@ I've worked as a data/analytics intern across nonprofit consulting, education-fi
 | 7 | [Red Wine Quality](./07-red-wine-quality) | What makes a wine "good"? | Logistic regression (**AUC 0.876**) beats a tuned decision tree and a random forest | Classification, `GridSearchCV`, ROC/AUC |
 | 8 | [Luxury Fashion Trends](./08-luxury-fashion-trends) | What language signals a premium price? | Description text alone predicts premium pricing at **AUC 0.861** | TF-IDF, classification |
 | 9 | [Customer Revenue & Retention in SQL](./09-sql-customer-revenue-analysis) | Where does revenue come from, and who is worth winning back? | Top 20% of customers generate **48.9%** of revenue; churn is ~30% in every spend decile | SQL: CTEs, window functions, joins |
+| 10 | [Sony Financial Model & DCF Valuation](./10-sony-financial-model-dcf-valuation) | What is Sony worth on its own cash flows? | Base-case DCF value of **¥3,578 per share**, 7% below the market price | Excel three-statement model, revenue forecast, DCF, scenarios |
 
-Each project folder contains a `README.md` (business question, approach, findings, recommendations), the full executed work (`analysis.ipynb`, or `.sql` files for project 9), and the exported charts or query results.
+Each project folder contains a `README.md` (business question, approach, findings, recommendations), the full executed work (`analysis.ipynb`, `.sql` files for project 9, or the Excel model and scripts for project 10), and the exported charts or query results.
 
 ## 🚀 Run a project locally
 
@@ -67,4 +70,4 @@ cd data-analyst-portfolio
 pip install -r requirements.txt
 ```
 
-Data is included in each project's `data/` folder, so the notebooks run as-is. The exception is project 3, which fetches its data at runtime (see its `data/README.md`). Project 9 builds its SQLite database from project 4's CSV with `python build_db.py`.
+Data is included in each project's `data/` folder, so the notebooks run as-is. The exception is project 3, which fetches its data at runtime (see its `data/README.md`). Project 9 builds its SQLite database from project 4's CSV with `python build_db.py`. Project 10 rebuilds its Excel model with the three scripts listed in its README.
